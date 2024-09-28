@@ -1,0 +1,16 @@
+$schema: 'https://json-schema.org/draft/2020-12/schema'
+$id: 'https://raw.githubusercontent.com/EOEPCA/metadata-profile/refs/heads/master/resource.yaml'
+title: EOEPCA metadata profile
+description: EOEPCA metadata profile
+
+allOf:
+  - $ref: 'https://raw.githubusercontent.com/opengeospatial/ogcapi-records/refs/heads/master/core/openapi/schemas/recordGeoJSON.yaml'
+  - properties:
+      type:
+        type: string
+        enum:
+            - dataset
+            - service
+            - process
+            - workflow
+        description: EOEPCA resource type

@@ -1,1 +1,1 @@
-# EOEPCA Metadata Profile
+# EOEPCA Metadata Profile (EMP)
