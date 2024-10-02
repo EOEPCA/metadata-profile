@@ -754,15 +754,20 @@
     },
     {
       "properties": {
-        "type": {
-          "type": "string",
-          "enum": [
-            "dataset",
-            "service",
-            "process",
-            "workflow"
-          ],
-          "description": "EOEPCA resource type"
+        "properties": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "description": "EOEPCA resource type",
+              "enum": [
+                "dataset",
+                "service",
+                "process",
+                "workflow"
+              ]
+            }
+          }
         }
       }
     }
